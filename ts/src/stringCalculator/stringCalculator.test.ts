@@ -1,4 +1,5 @@
 import StringCalculator from "./stringCalculator";
+import ErrorMessages from "./stringCalculatorErrors.enum";
 
 test('should return 0', () => {
     expect(StringCalculator.Add("")).toStrictEqual(0);
@@ -17,4 +18,7 @@ test('should return 6 with \\n delimiter', () => {
 });
 test('should return 6 with a custom delimiter', () => {
     expect(StringCalculator.Add("//;\n1,2;3")).toStrictEqual(6);
+});
+test('should throw an error as strings contains negative numbers', () => {
+    expect(StringCalculator.Add("-5,2,-10,9")).toThrow(ErrorMessages.NEGATIVE_NUMBER_ERROR);
 });

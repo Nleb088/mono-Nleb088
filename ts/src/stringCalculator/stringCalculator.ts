@@ -1,3 +1,5 @@
+import ErrorMessages from "./stringCalculatorErrors.enum";
+
 export default class StringCalculator {
     static Add(input: string): number {
         const optionalDelimiter: string = this.extractOptionalDelimiter(input);
@@ -5,7 +7,13 @@ export default class StringCalculator {
         const numbers: string = input.substring(startIndex);
         const delimiters = new RegExp(`[${optionalDelimiter},\n}]`);
 
-        const sum: number = numbers.split(delimiters).reduce((acc: number, number: string) => acc + (parseInt(number) || 0), 0);
+        const sum: number = numbers.split(delimiters).reduce((acc: number, number: string) => {
+            const num = parseInt(number);
+            if (num < 0) {
+                throw new Error(ErrorMessages.NEGATIVE_NUMBER_ERROR);
+            }
+            return acc + (num || 0);
+        }, 0);
 
         return sum;
     }
