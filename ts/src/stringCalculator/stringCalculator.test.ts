@@ -22,3 +22,6 @@ test('should return 6 with a custom delimiter', () => {
 test('should throw an error as strings contains negative numbers', () => {
     expect(StringCalculator.Add("-5,2,-10,9")).toThrow(ErrorMessages.NEGATIVE_NUMBER_ERROR);
 });
+test('should ignore numbers superior to 1000', () => {
+    expect(StringCalculator.Add("5,10,1664")).toStrictEqual(15);
+});

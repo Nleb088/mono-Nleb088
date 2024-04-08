@@ -5,14 +5,17 @@ export default class StringCalculator {
         const optionalDelimiter: string = this.extractOptionalDelimiter(input);
         const startIndex: number = optionalDelimiter ? input.indexOf('\n') + 1 : 0;
         const numbers: string = input.substring(startIndex);
-        const delimiters = new RegExp(`[${optionalDelimiter},\n}]`);
+        const delimiters = new RegExp(`[${optionalDelimiter},\n]`);
 
         const sum: number = numbers.split(delimiters).reduce((acc: number, number: string) => {
             const num = parseInt(number);
             if (num < 0) {
                 throw new Error(ErrorMessages.NEGATIVE_NUMBER_ERROR);
             }
-            return acc + (num || 0);
+            if (isNaN(num) || num > 1000) {
+                return acc;
+            }
+            return acc + num;
         }, 0);
 
         return sum;
