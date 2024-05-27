@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="6_orbital-launchers-launch-parameters-solution" />
+        <module name="4_orbital-legacy-launchers-solution" />
+        <module name="3_orbital-launchers-payload-configuration" />
+        <module name="4_orbital-legacy-launchers" />
+        <module name="5_orbital-launchers-mission-control" />
+        <module name="2_orbital-launchers-javaconfig-solution" />
+        <module name="3_orbital-launchers-payload-configuration-solution" />
+        <module name="6_orbital-launchers-launch-parameters" />
+        <module name="1_orbital-launchers" />
+        <module name="5_orbital-launchers-mission-control-solution" />
+        <module name="1_orbital-launchers-solution" />
+        <module name="2_orbital-launchers-javaconfig" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

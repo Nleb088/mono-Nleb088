@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.carbon-it</groupId>
+    <artifactId>spring-space-center</artifactId>
+    <packaging>pom</packaging>
+    <version>2.0.0</version>
+
+    <modules>
+        <module>1_orbital-launchers</module>
+        <module>1_orbital-launchers-solution</module>
+        <module>2_orbital-launchers-javaconfig</module>
+        <module>2_orbital-launchers-javaconfig-solution</module>
+        <module>3_orbital-launchers-payload-configuration</module>
+        <module>3_orbital-launchers-payload-configuration-solution</module>
+        <module>4_orbital-legacy-launchers</module>
+        <module>4_orbital-legacy-launchers-solution</module>
+        <module>5_orbital-launchers-mission-control</module>
+        <module>5_orbital-launchers-mission-control-solution</module>
+        <module>6_orbital-launchers-launch-parameters</module>
+        <module>6_orbital-launchers-launch-parameters-solution</module>
+    </modules>
+
+    <properties>
+        <spring-boot.version>3.2.5</spring-boot.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
+        <jakarta.version>3.0.0</jakarta.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.annotation</groupId>
+                <artifactId>jakarta.annotation-api</artifactId>
+                <version>${jakarta.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${jakarta.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>

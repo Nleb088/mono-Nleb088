@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1_orbital-launchers/1_orbital-launchers.iml" filepath="$PROJECT_DIR$/1_orbital-launchers/1_orbital-launchers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1_orbital-launchers-solution/1_orbital-launchers-solution.iml" filepath="$PROJECT_DIR$/1_orbital-launchers-solution/1_orbital-launchers-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_orbital-launchers-javaconfig/2_orbital-launchers-javaconfig.iml" filepath="$PROJECT_DIR$/2_orbital-launchers-javaconfig/2_orbital-launchers-javaconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_orbital-launchers-javaconfig-solution/2_orbital-launchers-javaconfig-solution.iml" filepath="$PROJECT_DIR$/2_orbital-launchers-javaconfig-solution/2_orbital-launchers-javaconfig-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_orbital-launchers-payload-configuration/3_orbital-launchers-payload-configuration.iml" filepath="$PROJECT_DIR$/3_orbital-launchers-payload-configuration/3_orbital-launchers-payload-configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_orbital-launchers-payload-configuration-solution/3_orbital-launchers-payload-configuration-solution.iml" filepath="$PROJECT_DIR$/3_orbital-launchers-payload-configuration-solution/3_orbital-launchers-payload-configuration-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4_orbital-legacy-launchers/4_orbital-legacy-launchers.iml" filepath="$PROJECT_DIR$/4_orbital-legacy-launchers/4_orbital-legacy-launchers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4_orbital-legacy-launchers-solution/4_orbital-legacy-launchers-solution.iml" filepath="$PROJECT_DIR$/4_orbital-legacy-launchers-solution/4_orbital-legacy-launchers-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5_orbital-launchers-mission-control/5_orbital-launchers-mission-control.iml" filepath="$PROJECT_DIR$/5_orbital-launchers-mission-control/5_orbital-launchers-mission-control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5_orbital-launchers-mission-control-solution/5_orbital-launchers-mission-control-solution.iml" filepath="$PROJECT_DIR$/5_orbital-launchers-mission-control-solution/5_orbital-launchers-mission-control-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6_orbital-launchers-launch-parameters/6_orbital-launchers-launch-parameters.iml" filepath="$PROJECT_DIR$/6_orbital-launchers-launch-parameters/6_orbital-launchers-launch-parameters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6_orbital-launchers-launch-parameters-solution/6_orbital-launchers-launch-parameters-solution.iml" filepath="$PROJECT_DIR$/6_orbital-launchers-launch-parameters-solution/6_orbital-launchers-launch-parameters-solution.iml" />
+    </modules>
+  </component>
+</project>
