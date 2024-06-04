@@ -14,7 +14,7 @@ public class SpaceCenter {
     }
 
     // TODO 5 : hook onInit_JavaConfig and onDestroy_JavaConfig properly.
-    @Bean
+    @Bean(initMethod="onInit_JavaConfig", destroyMethod = "onDestroy_JavaConfig")
     public MissionControl missionControl() {
         return new CustomMissionControl();
     }
