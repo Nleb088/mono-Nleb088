@@ -37,7 +37,7 @@ class OrbitalLaunchersViewControllerTest {
                 "energia",
                 "soyuz",
                 "falcon-heavy");
-        
+
         List<OrbitalLauncher> launchers = Arrays.asList(new OrbitalLauncher("ariane-5","ariane-5",16000),
                 new OrbitalLauncher("energia","energia",100000),
                 new OrbitalLauncher("soyuz","soyuz",7020),
