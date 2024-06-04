@@ -1,0 +1,6 @@
+{
+  "_class": "io.vieira.space.launchers.OrbitalLauncher",
+  "name": "Falcon Heavy",
+  "codeName": "falcon-heavy",
+  "maxLeo": 63800
+}

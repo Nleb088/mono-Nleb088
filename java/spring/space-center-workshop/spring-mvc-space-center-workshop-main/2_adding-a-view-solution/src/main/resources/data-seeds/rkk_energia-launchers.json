@@ -1,0 +1,14 @@
+[
+  {
+    "_class": "io.vieira.space.launchers.OrbitalLauncher",
+    "name": "Energia",
+    "codeName": "energia",
+    "maxLeo": 100000
+  },
+  {
+    "_class": "io.vieira.space.launchers.OrbitalLauncher",
+    "name": "Soyuz",
+    "codeName": "soyuz",
+    "maxLeo": 7020
+  }
+]

@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.vieira</groupId>
+    <artifactId>spring-mvc-space-center</artifactId>
+    <version>1.0.0</version>
+    <modules>
+        <module>1_creating-rest-endpoints</module>
+        <module>1_creating-rest-endpoints-solution</module>
+        <module>2_adding-a-view</module>
+        <module>2_adding-a-view-solution</module>
+        <module>3_producing-binary-data</module>
+        <module>3_producing-binary-data-solution</module>
+        <module>4_handling-exceptions</module>
+        <module>4_handling-exceptions-solution</module>
+        <module>5_sharing-resources</module>
+        <module>5_sharing-resources-solution</module>
+    </modules>
+    <packaging>pom</packaging>
+    <name>spring-mvc-space-center</name>
+
+    <properties>
+        <spring-boot.version>2.7.7</spring-boot.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <pebble.version>3.1.6</pebble.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.pebbletemplates</groupId>
+                <artifactId>pebble-spring-boot-starter</artifactId>
+                <version>${pebble.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>

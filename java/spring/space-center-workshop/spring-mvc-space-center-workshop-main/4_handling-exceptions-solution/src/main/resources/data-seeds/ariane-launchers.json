@@ -1,0 +1,6 @@
+{
+  "_class": "io.vieira.space.launchers.OrbitalLauncher",
+  "name": "Ariane 5",
+  "codeName": "ariane-5",
+  "maxLeo": 16000
+}

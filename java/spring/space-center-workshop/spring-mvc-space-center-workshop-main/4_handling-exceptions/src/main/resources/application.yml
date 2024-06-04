@@ -1,0 +1,7 @@
+spring:
+  banner:
+    location: space-center.txt
+  application:
+    name: Space Center
+  datasource:
+    generate-unique-name: true

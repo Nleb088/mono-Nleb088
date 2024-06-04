@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="1_creating-rest-endpoints" />
+        <module name="4_handling-exceptions" />
+        <module name="4_handling-exceptions-solution" />
+        <module name="5_sharing-resources" />
+        <module name="2_adding-a-view" />
+        <module name="3_producing-binary-data" />
+        <module name="5_sharing-resources-solution" />
+        <module name="3_producing-binary-data-solution" />
+        <module name="2_adding-a-view-solution" />
+        <module name="1_creating-rest-endpoints-solution" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="3_binary-data" target="1.8" />
+      <module name="6_validating-requests" target="1.8" />
+      <module name="6_validating-requests-solution" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

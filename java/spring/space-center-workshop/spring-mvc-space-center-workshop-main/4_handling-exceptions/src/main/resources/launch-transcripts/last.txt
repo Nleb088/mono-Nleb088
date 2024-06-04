@@ -1,0 +1,189 @@
+CDR..........Scobee
+
+PLT..........Smith
+
+MS 1.........Onizuka
+
+MS 2.........Resnik
+
+(The references to "NASA" indicate explanatory references NASA provided to the Presidential Commission.)
+
+Time Crew Crew
+
+(Min:Sec).........Position Comment
+
+T-2:05............MS 2..... Would you give that back to me?
+
+T-2:03............MS 2..... Security blanket.
+
+T-2:02............MS 2..... Hmm.
+
+T-1:58............CDR..... Two minutes downstairs; you gotta watch running down there?
+
+(NASA: Two minutes till launch.)
+
+T-1:47............PLT..... OK there goes the lox arm.
+
+(NASA: Liquid oxygen supply arm to ET.)
+
+T-1:46............CDR..... Goes the beanie cap.
+
+(NASA: Liquid oxygen vent cap.)
+
+T-1:44............MS 1..... Doesn't it go the other way?
+
+T-1:42............ Laughter.
+
+T-1:39............MS 1..... Now I see it; I see it.
+
+T-1:39............PLT..... God I hope not Ellison.
+
+T-1:38............MS 1..... I couldn't see it moving; it was behind the center screen.
+
+(NASA: Obstructed view of liquid oxygen supply arm.)
+
+T-1:33. .........MS 2..... Got your harnesses locked?
+
+(NASA: Seat restraints.)
+
+T-1:29............PLT..... What for?
+
+T-1:28............CDR..... I won't lock mine; I might have to reach something.
+
+T-1:24............PLT..... Ooh kaaaay.
+
+T-1:04............MS 1..... Dick's thinking of somebody there.
+
+T-1:03............CDR..... Unhuh.
+
+T-59..............CDR..... One minute downstairs.
+
+(NASA: One minute till launch.)
+
+T-52..............MS 2..... Cabin Pressure is probably going to give us an alarm.
+
+(NASA: Caution and warning alarm. Routine occurrence during prelaunch).
+
+T-50..............CDR..... OK.
+
+T-47..............CDR..... OK there.
+
+T-43..............PLT..... Alarm looks good.
+
+(NASA: Cabin pressure is acceptable.)
+
+T-42..............CDR..... OK.
+
+T-40..............PLT..... Ullage pressures are up.
+
+(NASA: External tank ullage pressure.)
+
+T-34..............PLT..... Right engine helium tank is just a little bit low.
+
+(NASA: SSME supply helium pressure.)
+
+T-32..............CDR..... It was yesterday, too.
+
+T-31..............PLT..... OK.
+
+T-30..............CDR..... Thirty seconds down there.
+
+(NASA: 30 seconds till launch.)
+
+T-25............PLT..... Remember the red button when you make a roll call.
+
+(NASA: Precautionary reminder for communications configuration.)
+
+T-23............CDR..... I won't do that; thanks a lot.
+
+T-15..............CDR..... Fifteen.
+
+(NASA: 15 seconds till launch.)
+
+T-6...............CDR..... There they go guys.
+
+(NASA: SSME Ignition.)
+
+MS 2..... All right.
+
+CDR..... Three at a hundred.
+
+(NASA: SSME thrust level at 100% for all 3 engines.)
+
+T+O...............MS 2..... Aaall riiight.
+
+T+1...............PLT..... Here we go.
+
+(NASA: Vehicle motion.)
+
+T+7...............CDR.............Houston, Challenger roll program.
+
+(NASA: Initiation of vehicle roll program.)
+
+T+11..............PLT..... Go you Mother.
+
+T+14..............MS 1..... LVLH.
+
+(NASA: Reminder for cockpit switch configuration change. Local vertical/local horizontal).
+
+T+15..............MS 2..... (Expletive) hot.
+
+T+16..............CDR..... Ooohh-kaaay.
+
+T+19..............PLT..... Looks like we've got a lotta wind here today.
+
+T+20..............CDR..... Yeah.
+
+T+22..............CDR..... It's a little hard to see out my window here.
+
+T+28..............PLT..... There's ten thousand feet and Mach point five.
+
+(NASA: Altitude and velocity report.)
+
+T+30............ Garble.
+
+T+35..............CDR..... Point nine.
+
+(NASA: Velocity report, 0.9 Mach).
+
+T+40..............PLT..... There's Mach one.
+
+(NASA: Velocity report, 1.0 Mach).
+
+T+41..............CDR..... Going through nineteen thousand.
+
+(NASA: Altitude report, 19,000 ft.)
+
+T+43..............CDR..... OK we're throttling down.
+
+(NASA: Normal SSME thrust reduction during maximum dynamic pressure region.)
+
+T+57..............CDR..... Throttling up.
+
+(NASA: Throttle up to 104% after maximum dynamic pressure.)
+
+T+58..............PLT..... Throttle up.
+
+T+59..............CDR..... Roger.
+
+T+60..............PLT..... Feel that mother go.
+
+T+60............ Woooohoooo.
+
+T+1:02............PLT..... Thirty-five thousand going through one point five
+
+(NASA: Altitude and velocity report, 35,000 ft., 1.5 Mach).
+
+T+1:05............CDR..... Reading four eighty six on mine.
+
+(NASA: Routine airspeed indicator check.)
+
+T+1:07............PLT..... Yep, that's what I've got, too.
+
+T+1:10............CDR..... Roger, go at throttle up.
+
+(NASA: SSME at 104 percent.)
+
+T+1:13............PLT..... Uhoh.
+
+T+1:13.......................LOSS OF ALL DATA.

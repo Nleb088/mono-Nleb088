@@ -1,0 +1,30 @@
+env:
+  projects: "1_creating-rest-endpoints-solution,2_adding-a-view-solution,3_producing-binary-data-solution,4_handling-exceptions-solution,5_sharing-resources-solution"
+
+jobs:
+  test:
+    needs: [ build ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+      - run: ./mvnw clean test -B -pl $projects
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+      - run: ./mvnw clean package -DskipTests -B -pl $projects
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:

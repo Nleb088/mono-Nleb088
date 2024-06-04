@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1_creating-rest-endpoints" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1_creating-rest-endpoints-solution" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1_creating-rest-endpoints-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1_creating-rest-endpoints-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1_creating-rest-endpoints/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1_creating-rest-endpoints/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2_adding-a-view" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2_adding-a-view-solution" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2_adding-a-view-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2_adding-a-view-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2_adding-a-view/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2_adding-a-view/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3_producing-binary-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3_producing-binary-data-solution" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3_producing-binary-data-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3_producing-binary-data-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3_producing-binary-data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3_producing-binary-data/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4_handling-exceptions" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4_handling-exceptions-solution" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4_handling-exceptions-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4_handling-exceptions-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4_handling-exceptions/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4_handling-exceptions/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5_sharing-resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5_sharing-resources-solution" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5_sharing-resources-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5_sharing-resources-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5_sharing-resources/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5_sharing-resources/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/6_validating-requests-solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/6_validating-requests-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/6_validating-requests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/6_validating-requests/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

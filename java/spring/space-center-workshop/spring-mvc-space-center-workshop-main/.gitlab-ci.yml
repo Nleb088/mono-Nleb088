@@ -1,0 +1,10 @@
+variables:
+  projects: "1_creating-rest-endpoints-solution,2_adding-a-view-solution,3_producing-binary-data-solution,4_handling-exceptions-solution,5_sharing-resources-solution"
+
+image: azul/zulu-openjdk
+
+test:
+  script: "./mvnw clean test -B -pl $projects"
+
+build:
+  script: "./mvnw clean package -B -pl $projects"

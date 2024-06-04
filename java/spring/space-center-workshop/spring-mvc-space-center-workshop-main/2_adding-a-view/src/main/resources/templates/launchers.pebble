@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Launchers</title>
+</head>
+<body>
+<h1>There is actually {{ launchers.size() }} launchers registered.</h1>
+{% for launcher in launchers %}
+    <h2>{{ launcher.getCodeName() }}</h2>
+    <p>Max payload weight for LEO : {{ launcher.getMaxLeo() }}</p>
+{% endfor %}
+</body>
+</html>

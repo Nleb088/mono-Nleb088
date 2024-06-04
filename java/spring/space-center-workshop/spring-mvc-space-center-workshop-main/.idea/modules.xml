@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1_creating-rest-endpoints/1_creating-rest-endpoints.iml" filepath="$PROJECT_DIR$/1_creating-rest-endpoints/1_creating-rest-endpoints.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1_creating-rest-endpoints-solution/1_creating-rest-endpoints-solution.iml" filepath="$PROJECT_DIR$/1_creating-rest-endpoints-solution/1_creating-rest-endpoints-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_adding-a-view/2_adding-a-view.iml" filepath="$PROJECT_DIR$/2_adding-a-view/2_adding-a-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_adding-a-view-solution/2_adding-a-view-solution.iml" filepath="$PROJECT_DIR$/2_adding-a-view-solution/2_adding-a-view-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_producing-binary-data/3_producing-binary-data.iml" filepath="$PROJECT_DIR$/3_producing-binary-data/3_producing-binary-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_producing-binary-data-solution/3_producing-binary-data-solution.iml" filepath="$PROJECT_DIR$/3_producing-binary-data-solution/3_producing-binary-data-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4_handling-exceptions/4_handling-exceptions.iml" filepath="$PROJECT_DIR$/4_handling-exceptions/4_handling-exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4_handling-exceptions-solution/4_handling-exceptions-solution.iml" filepath="$PROJECT_DIR$/4_handling-exceptions-solution/4_handling-exceptions-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5_sharing-resources/5_sharing-resources.iml" filepath="$PROJECT_DIR$/5_sharing-resources/5_sharing-resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5_sharing-resources-solution/5_sharing-resources-solution.iml" filepath="$PROJECT_DIR$/5_sharing-resources-solution/5_sharing-resources-solution.iml" />
+    </modules>
+  </component>
+</project>
