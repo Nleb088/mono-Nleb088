@@ -29,6 +29,22 @@ public class StringCalculatorTest {
         //When
         int sum = strCalc.add("1,2");
         //Then
-        assertEquals(sum,3);
+        assertEquals(3,sum);
+    }
+
+    @Test
+    public void shouldReturnIntegerValueForAnyNumberOfDigitString() {
+        //When
+        int sum = strCalc.add("1,2,3,4,5");
+        //Then
+        assertEquals(15,sum);
+    }
+
+    @Test
+    public void shouldReturnIntegerValueSupportingCommaAndNewLineAsDelimiters() {
+        //When
+        int sum = strCalc.add("1,2,3,4\n5");
+        //Then
+        assertEquals(15,sum);
     }
 }
