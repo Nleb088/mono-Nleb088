@@ -41,9 +41,17 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void shouldReturnIntegerValueSupportingCommaAndNewLineAsDelimiters() {
+    public void shouldSupportCommaAndNewLineAsDelimiters() {
         //When
         int sum = strCalc.add("1,2,3,4\n5");
+        //Then
+        assertEquals(15,sum);
+    }
+
+    @Test
+    public void shouldSupportCustomDelimiters() {
+        //When
+        int sum = strCalc.add("//t\n1,2,3t4\n5");
         //Then
         assertEquals(15,sum);
     }
