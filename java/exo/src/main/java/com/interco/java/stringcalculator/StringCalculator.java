@@ -10,7 +10,7 @@ public class StringCalculator {
 
     private static final int MAX_VALUE = 1000;
     private static final String DEFAULT_DELIMITERS = ",\n";
-    private static final Pattern CUSTOM_DELIMITER_PATTERN = Pattern.compile("^//(.)\\n([\\s\\S]*)", Pattern.DOTALL);
+    private static final Pattern CUSTOM_DELIMITER_PATTERN = Pattern.compile("^//(.)\\n([\\s\\S]*)");
 
     public int add(String input) throws NegativeNumberException {
         if (input.isEmpty()) return 0;
