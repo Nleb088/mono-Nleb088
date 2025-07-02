@@ -67,6 +67,14 @@ public class StringCalculatorTest {
     }
 
     @Test
+    public void shouldThrowAnSpecificExceptionWhenInputStringContainsASingleNegativeNumber() {
+        //When
+        Exception e = assertThrows(Exception.class, () -> strCalc.add("-5,2,9"));
+        //Then
+        assertEquals("Les nombres négatifs ne sont pas autorisés", e.getMessage());
+    }
+
+    @Test
     public void shouldIgnoreNumbersOver1000WhenSummingValues() throws StringCalculator.NegativeNumberException {
         //When
         int sum = strCalc.add("5,10,1664");

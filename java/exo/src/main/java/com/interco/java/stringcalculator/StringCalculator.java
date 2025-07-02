@@ -1,5 +1,6 @@
 package com.interco.java.stringcalculator;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -22,11 +23,14 @@ public class StringCalculator {
 
     private int calculateSum(List<Integer> numbers) throws NegativeNumberException {
         int sum = 0;
+        List<Integer> negativeNumbers = new ArrayList<Integer>();
 
         for (int n : numbers) {
-            if (n < 0) throw new NegativeNumberException(numbers);
+            if (n < 0) negativeNumbers.add(n);
             else if (n <= MAX_VALUE) sum += n;
         }
+
+        if (!negativeNumbers.isEmpty()) throw new NegativeNumberException(negativeNumbers);
 
         return sum;
     }
@@ -53,11 +57,19 @@ public class StringCalculator {
     }
 
     public static class NegativeNumberException extends Exception {
-        public NegativeNumberException(List<Integer> numbers) {
-            super("Les nombres négatifs ne sont pas autorisés : " +
-                    numbers.stream()
-                            .filter(n -> n < 0)
-                            .map(Object::toString).collect(Collectors.joining(", ")));
+        public NegativeNumberException(List<Integer> negativeNumbers) {
+            super(createNegativeNumberMessage(negativeNumbers));
+        }
+
+        private static String createNegativeNumberMessage(List<Integer> negativeNumbers) {
+            String errorMessage = "Les nombres négatifs ne sont pas autorisés";
+            if (negativeNumbers.size() > 1) {
+                errorMessage = "Les nombres négatifs ne sont pas autorisés : " +
+                        negativeNumbers.stream()
+                                .filter(n -> n < 0)
+                                .map(Object::toString).collect(Collectors.joining(", "));
+            }
+            return errorMessage;
         }
     }
 }
