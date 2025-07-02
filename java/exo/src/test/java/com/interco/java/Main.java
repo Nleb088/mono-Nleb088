@@ -1,4 +1,4 @@
-package java;
+package com.interco.java.stringcalculator;
 
 public class Main {
     public static void main(String[] args) {

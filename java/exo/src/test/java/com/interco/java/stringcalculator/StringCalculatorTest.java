@@ -1,4 +1,5 @@
-import com.interco.java.stringcalculator.StringCalculator;
+package com.interco.java.stringcalculator;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

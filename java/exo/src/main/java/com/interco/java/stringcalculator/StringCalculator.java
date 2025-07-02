@@ -10,7 +10,7 @@ public class StringCalculator {
 
     private static final int MAX_VALUE = 1000;
     private static final String DEFAULT_DELIMITERS = ",\n";
-    private static final Pattern CUSTOM_DELIMITER_PATTERN = Pattern.compile("^//(.)\\n(.*)", Pattern.DOTALL);
+    private static final Pattern CUSTOM_DELIMITER_PATTERN = Pattern.compile("^//(.)\\n([\\s\\S]*)", Pattern.DOTALL);
 
     public int add(String input) throws NegativeNumberException {
         if (input.isEmpty()) return 0;
@@ -41,7 +41,14 @@ public class StringCalculator {
         }
 
         return Arrays.stream(input.split("[" + delimiters + "]"))
-                .map(Integer::parseInt)
+                .filter(s -> !s.trim().isEmpty())
+                .map(str -> {
+                    try {
+                        return Integer.parseInt(str);
+                    } catch (NumberFormatException e) {
+                        return 0;
+                    }
+                })
                 .toList();
     }
 
@@ -53,6 +60,4 @@ public class StringCalculator {
                             .map(Object::toString).collect(Collectors.joining(", ")));
         }
     }
-
-
 }
