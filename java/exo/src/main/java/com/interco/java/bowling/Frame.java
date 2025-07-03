@@ -5,22 +5,25 @@ public class Frame {
     private int thrownBowl = 0;
 
     public void roll(int pinsDown) {
+        if (this.isOver())
+            return;
         pins[thrownBowl] = pinsDown;
         thrownBowl++;
     }
 
-    public boolean isFrameOver() {
+    public boolean isOver() {
         return (this.isStrike() || thrownBowl == 2);
     }
 
-    public int calculateFrameScore(Frame lastFrame) {
-        int sum = pins[0] * pins[1];
-        if (lastFrame != null) {
-            if (lastFrame.isSpare()) return sum + pins[0];
-            if (lastFrame.isStrike()) return 2 * sum;
+    public int calculateFrameScore(Frame lastFrame, boolean isBonusRound) {
+        if (isBonusRound) return this.bonusScoreForLastFrame(lastFrame);
+        return pins[0] + pins[1] + this.bonusScoreForLastFrame(lastFrame);
+    }
 
-        }
-        return sum;
+    private int bonusScoreForLastFrame(Frame lastFrame) {
+        if (lastFrame.isSpare()) return pins[0];
+        if (lastFrame.isStrike()) return pins[0] + pins[1];
+        return 0;
     }
 
     public boolean isSpare() {
@@ -30,5 +33,4 @@ public class Frame {
     public boolean isStrike() {
         return pins[0] == 10;
     }
-
 }

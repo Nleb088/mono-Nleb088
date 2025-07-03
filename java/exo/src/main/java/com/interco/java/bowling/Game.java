@@ -1,30 +1,32 @@
 package com.interco.java.bowling;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Game {
 
-    private final List<Frame> frames = new ArrayList<>();
+    private int lastScore = 0;
     private int score = 0;
     private int turn = 1;
-    private Frame currentFrame = null;
+    private Frame currentFrame = new Frame();
+    private Frame lastFrame = new Frame();
 
     public void roll(Integer pins) {
+        boolean isBonusRound = turn == 11;
         currentFrame.roll(pins);
-
-        if (currentFrame.isFrameOver()) {
-            Frame lastFrame = this.frames.get(turn - 1);
+        score = lastScore + currentFrame.calculateFrameScore(lastFrame, isBonusRound);
+        if (currentFrame.isOver()) {
+            lastFrame = currentFrame;
             turn++;
-            score += currentFrame.calculateFrameScore(lastFrame);
-            frames.add(currentFrame);
             currentFrame = new Frame();
+            lastScore = score;
         }
+
     }
 
     public Integer score() {
         return score;
     }
 
+    private boolean allowRoll() {
+        return turn < 10 || (turn < 11 && (currentFrame.isSpare() || currentFrame.isStrike()));
+    }
 
 }
