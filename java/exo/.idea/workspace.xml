@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0049137-2954-468a-8787-53bdf6ff001e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2zGtoqE6lM3ndOrQMtPvjaN8qvT" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.FrameTest.FrameScoreShouldEqualPinsSumPlusFirstPinsFromNextFrameShotWhenASpare.executor": "Run",
+    "JUnit.FrameTest.FrameScoreShouldEqualPinsSumPlusPinsSumFromNextFrameShotWhenAStrike.executor": "Run",
+    "JUnit.FrameTest.FrameScoreShouldEqualPinsSumWhileNextFrameIsStillEmpty.executor": "Run",
+    "JUnit.FrameTest.FrameScoreShouldNotChangeIfRollingAfterItIsOver.executor": "Run",
+    "JUnit.FrameTest.executor": "Run",
+    "JUnit.FrameTest.frameScoreShouldEqualPinsSumPlusPinsSumFromNextFrameShotWhenAStrike.executor": "Run",
+    "JUnit.FrameTest.shouldUpdateFrameScoreWhenRolling.executor": "Run",
+    "JUnit.FrameTest.testIsFrameOver.executor": "Run",
+    "JUnit.FrameTest.testIsSpare.executor": "Run",
+    "JUnit.GameTest.executor": "Run",
+    "JUnit.GameTest.shouldReturnTheCurrentScore.executor": "Run",
+    "JUnit.StringCalculatorTest (1).executor": "Run",
+    "JUnit.StringCalculatorTest.executor": "Run",
+    "JUnit.StringCalculatorTest.shouldReturn0WhenInputStringIsEmpty.executor": "Run",
+    "JUnit.StringCalculatorTest.shouldReturnIntegerValueForAnyNumberOfDigitString.executor": "Run",
+    "JUnit.StringCalculatorTest.shouldReturnIntegerValueSupportingCommaAndNewLineAsDelimiters.executor": "Run",
+    "JUnit.StringCalculatorTest.shouldSupportCommaAndNewLineAsDelimiters.executor": "Run",
+    "JUnit.StringCalculatorTest.shouldSupportCustomDelimiters.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "code.cleanup.on.save": "true",
+    "git-widget-placeholder": "todo-backend",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Guest1/Documents/mono-Nleb088/java/exo/src/test/java",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Guest1\Documents\mono-Nleb088\java\exo\src\test\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.interco.java.stringcalculator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GameTest">
+    <configuration name="FrameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interco.java.bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interco.java.bowling" />
+      <option name="MAIN_CLASS_NAME" value="com.interco.java.bowling.FrameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FrameTest.frameScoreShouldEqualPinsSumPlusPinsSumFromNextFrameShotWhenAStrike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interco.java.bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interco.java.bowling" />
+      <option name="MAIN_CLASS_NAME" value="com.interco.java.bowling.FrameTest" />
+      <option name="METHOD_NAME" value="frameScoreShouldEqualPinsSumPlusPinsSumFromNextFrameShotWhenAStrike" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interco.java.bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interco.java.bowling" />
+      <option name="MAIN_CLASS_NAME" value="com.interco.java.bowling.GameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.shouldReturnTheCurrentScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interco.java.bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interco.java.bowling" />
+      <option name="MAIN_CLASS_NAME" value="com.interco.java.bowling.GameTest" />
+      <option name="METHOD_NAME" value="shouldReturnTheCurrentScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interco.java.stringcalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interco.java.stringcalculator" />
+      <option name="MAIN_CLASS_NAME" value="com.interco.java.stringcalculator.StringCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.shouldReturnTheCurrentScore" />
+        <item itemvalue="JUnit.FrameTest" />
+        <item itemvalue="JUnit.FrameTest.frameScoreShouldEqualPinsSumPlusPinsSumFromNextFrameShotWhenAStrike" />
+        <item itemvalue="JUnit.StringCalculatorTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0049137-2954-468a-8787-53bdf6ff001e" name="Changes" comment="" />
+      <created>1751369415314</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751369415314</updated>
+    </task>
+    <servers />
+  </component>
+</project>
