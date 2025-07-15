@@ -13,8 +13,8 @@ public class TaskDtoMapper {
 
     public static EditTaskInput ToEditTaskInput(TaskUpdateDto taskUpdateDto) {
         return new EditTaskInput(
-                taskUpdateDto.getTitle().orElse(null),
-                taskUpdateDto.getCompleted().orElse(null));
+                taskUpdateDto.title().orElse(null),
+                taskUpdateDto.completed().orElse(null));
     }
 
 }
