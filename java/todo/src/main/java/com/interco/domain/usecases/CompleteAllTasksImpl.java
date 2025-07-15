@@ -18,7 +18,7 @@ public class CompleteAllTasksImpl implements CompleteAllTasks {
         List<Task> tasks = this.taskRepository.findAll();
 
         for (Task t : tasks) {
-            t.complete();
+            t.setCompleted(true);
         }
 
         return taskRepository.saveMultiple(tasks);

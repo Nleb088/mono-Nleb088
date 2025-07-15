@@ -14,12 +14,12 @@ public class DeleteAllCompletedTasksImpl implements DeleteAllCompletedTasks {
     }
 
     @Override
-    public void execute(String title) {
+    public void execute() {
         List<Task> tasks = this.taskRepository.findAll();
 
         for (Task t : tasks) {
             if (t.isCompleted())
-                taskRepository.deleteById(t.getId().toString());
+                taskRepository.deleteById(t.getId());
         }
     }
 

@@ -1,8 +1,13 @@
 package com.interco.domain.usecases;
 
+import java.util.Optional;
+import java.util.UUID;
+
+import com.interco.domain.entity.EditTaskInput;
 import com.interco.domain.entity.Task;
 import com.interco.domain.ports.TaskRepository;
 import com.interco.domain.ports.usecases.EditTask;
+import com.interco.rest.entity.TaskUpdateDto;
 
 public class EditTaskImpl implements EditTask {
 
@@ -13,8 +18,22 @@ public class EditTaskImpl implements EditTask {
     }
 
     @Override
-    public Task execute(Task task) {
-        return this.taskRepository.save(task);
+    public Task execute(UUID taskId, EditTaskInput input) {
+
+        Optional<Task> existingTaskOptional = taskRepository.findById(taskId);
+
+        if (existingTaskOptional.isPresent()) {
+            Task existingTask = existingTaskOptional.get();
+            if (input.title() != null) {
+                existingTask.setTitle(input.title());
+            }
+            if (input.completed() != null) {
+                existingTask.setCompleted(input.completed());
+            }
+            return taskRepository.save(existingTask);
+        } else {
+            return null;
+        }
     }
 
 }

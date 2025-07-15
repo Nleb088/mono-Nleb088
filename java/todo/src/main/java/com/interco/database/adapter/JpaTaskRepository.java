@@ -2,6 +2,7 @@ package com.interco.database.adapter;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Repository;
@@ -22,14 +23,24 @@ public class JpaTaskRepository implements TaskRepository {
 
     @Override
     public Task save(Task task) {
-        TaskJpaEntity taskJpaEntity = TaskJpaEntityMapper.toTaskJpa(task);
+        TaskJpaEntity taskJpaEntity;
 
+        Optional<TaskJpaEntity> existingJpaEntity = springDataTaskRepository.findByBusinessId(task.getId().toString());
+
+        if (existingJpaEntity.isPresent()) {
+            taskJpaEntity = existingJpaEntity.get();
+            taskJpaEntity.setTitle(task.getTitle());
+            taskJpaEntity.setPosition(task.getPosition());
+            taskJpaEntity.setCompleted(task.isCompleted());
+        } else {
+            taskJpaEntity = TaskJpaEntityMapper.toTaskJpa(task);
+        }
         return TaskJpaEntityMapper.toDomain(springDataTaskRepository.save(taskJpaEntity));
     }
 
     @Override
-    public Optional<Task> findById(String id) {
-        Optional<TaskJpaEntity> entityOptional = springDataTaskRepository.findByBusinessId(id);
+    public Optional<Task> findById(UUID id) {
+        Optional<TaskJpaEntity> entityOptional = springDataTaskRepository.findByBusinessId(id.toString());
 
         return entityOptional.map(TaskJpaEntityMapper::toDomain);
     }
@@ -42,8 +53,8 @@ public class JpaTaskRepository implements TaskRepository {
     }
 
     @Override
-    public void deleteById(String id) {
-        springDataTaskRepository.deleteByBusinessId(id);
+    public void deleteById(UUID id) {
+        springDataTaskRepository.deleteByBusinessId(id.toString());
     }
 
     @Override

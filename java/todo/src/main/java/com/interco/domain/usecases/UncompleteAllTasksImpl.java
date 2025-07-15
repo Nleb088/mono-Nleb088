@@ -18,7 +18,7 @@ public class UncompleteAllTasksImpl implements UncompleteAllTasks {
         List<Task> tasks = this.taskRepository.findAll();
 
         for (Task t : tasks) {
-            t.uncomplete();
+            t.setCompleted(false);
         }
 
         return taskRepository.saveMultiple(tasks);

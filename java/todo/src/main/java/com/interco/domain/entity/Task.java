@@ -22,20 +22,6 @@ public class Task {
         this.position = position;
     }
 
-    public void complete() {
-        if (this.completed) {
-            return;
-        }
-        this.completed = true;
-    }
-
-    public void uncomplete() {
-        if (!this.completed) {
-            return;
-        }
-        this.completed = false;
-    }
-
     public UUID getId() {
         return this.id;
     }
@@ -44,20 +30,28 @@ public class Task {
         return this.title;
     }
 
-    public void updateTitle(String title) {
+    public void setTitle(String title) {
         this.title = title;
-    }
-
-    public long setPosition(long position) {
-        return this.position = position;
     }
 
     public long getPosition() {
         return this.position;
     }
 
+    public void setPosition(long position) {
+        this.position = position;
+    }
+
     public boolean isCompleted() {
         return this.completed;
+    }
+
+    public boolean getCompleted() {
+        return this.completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 
 }

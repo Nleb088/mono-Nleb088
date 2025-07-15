@@ -14,6 +14,6 @@ public class DeleteTaskImpl implements DeleteTask {
 
     @Override
     public void execute(UUID id) {
-        this.taskRepository.deleteById(id.toString());
+        this.taskRepository.deleteById(id);
     }
 }

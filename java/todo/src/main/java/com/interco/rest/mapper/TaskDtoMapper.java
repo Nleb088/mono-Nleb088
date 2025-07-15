@@ -1,16 +1,20 @@
 package com.interco.rest.mapper;
 
-
+import com.interco.domain.entity.EditTaskInput;
 import com.interco.domain.entity.Task;
 import com.interco.rest.entity.TaskDto;
+import com.interco.rest.entity.TaskUpdateDto;
 
 public class TaskDtoMapper {
 
-    public TaskDto mapTaskToTaskDto(Task task) {
-        return new TaskDto();
+    public static TaskDto ToTaskDto(Task task) {
+        return new TaskDto(task.getId().toString(), task.getTitle(), task.getPosition(), task.isCompleted());
     }
 
-    public Task mapTaskDtoToTask(TaskDto taskPersistance) {
-        return new Task("ds", 0);
+    public static EditTaskInput ToEditTaskInput(TaskUpdateDto taskUpdateDto) {
+        return new EditTaskInput(
+                taskUpdateDto.getTitle().orElse(null),
+                taskUpdateDto.getCompleted().orElse(null));
     }
+
 }

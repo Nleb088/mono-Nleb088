@@ -6,5 +6,5 @@ import java.util.UUID;
 import com.interco.domain.entity.Task;
 
 public interface ReorderTask {
-    public List<Task> execute(long newPosition, UUID id);
+    public List<Task> execute(UUID id, Long newPosition);
 }
