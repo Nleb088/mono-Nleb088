@@ -19,5 +19,5 @@ public interface TaskRepository {
 
     void deleteAll();
 
-    Integer count();
+    long count();
 }

@@ -17,7 +17,7 @@ public class ReorderTaskImpl implements ReorderTask {
     }
 
     @Override
-    public List<Task> execute(Integer newPosition, UUID id) {
+    public List<Task> execute(long newPosition, UUID id) {
         List<Task> tasks = this.taskRepository.findAll();
         Optional<Task> taskToMoveOptional = tasks.stream().filter(task -> task.getId().equals(id))
                 .findFirst();
@@ -28,7 +28,7 @@ public class ReorderTaskImpl implements ReorderTask {
 
         newPosition = Math.max(0, Math.min(newPosition, tasks.size()));
         Task taskToMove = taskToMoveOptional.get();
-        int oldPosition = taskToMove.getPosition();
+        long oldPosition = taskToMove.getPosition();
 
         for (Task t : tasks) {
             if (oldPosition < newPosition) {
